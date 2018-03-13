@@ -233,8 +233,8 @@ describe('dpDayPicker dayPicker', () => {
   });
 
   it('should check that the close delay is working', () => {
-    page.closeDelayInput.clear();
-    page.closeDelayInput.sendKeys(1000);
+    page.closeOnSelectDelayInput.clear();
+    page.closeOnSelectDelayInput.sendKeys(1000);
     page.dayPickerInput.click();
     page.clickOnDayButton('15');
     browser.waitForAngularEnabled(false);

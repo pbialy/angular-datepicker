@@ -38,6 +38,7 @@ const DAY_PICKER_DIRECTIVE_OPTION_KEYS = [
   'allowMultiSelect',
   'closeOnSelect',
   'closeOnSelectDelay',
+  'closeOnBodyClickDelay',
   'showGoToCurrent',
   'moveCalendarTo',
   ...PICKER_OPTION_KEYS
@@ -194,6 +195,7 @@ export class DemoComponent {
     allowMultiSelect: false,
     closeOnSelect: undefined,
     closeOnSelectDelay: 100,
+    closeOnBodyClickDelay: 0,
     openOnFocus: true,
     openOnClick: true,
     onOpenDelay: 0,

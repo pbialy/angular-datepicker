@@ -6,6 +6,7 @@ import {ITimeSelectConfig} from '../time-select/time-select-config.model';
 export interface IDatePickerDirectiveConfig extends IDayCalendarConfig, IMonthCalendarConfig, ITimeSelectConfig {
   closeOnSelect?: boolean;
   closeOnSelectDelay?: number;
+  closeOnBodyClickDelay?: number;
   onOpenDelay?: number;
   disableKeypress?: boolean;
   appendTo?: string | HTMLElement;

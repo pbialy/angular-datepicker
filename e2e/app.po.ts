@@ -90,7 +90,8 @@ export class DemoPage {
   maxSelectableInput = $('#maxSelectable input');
   closeOnSelect = $('#closeOnSelect');
   noCloseOnSelect = $('#noCloseOnSelect');
-  closeDelayInput = $('#closeDelay');
+  closeOnSelectDelayInput = $('#closeOnSelectDelay');
+  closeOnBodyClickDelayInput = $('#closeOnBodyClickDelay');
   weekDaysFormatInput = $('#weekDaysFormat');
   dateFormatInput = $('#dateFormat');
   enableMultiselect = $('#enableMultiselect');

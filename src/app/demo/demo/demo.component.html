@@ -774,10 +774,22 @@
           Closing Delay in ms (closeOnSelectDelay):
         </span>
         <div class="dp-option-playground">
-          <input id="closeDelay"
+          <input id="closeOnSelectDelay"
                  type="number"
                  [(ngModel)]="config.closeOnSelectDelay"
                  (change)="configChanged('closeOnSelectDelay', config.closeOnSelectDelay)">
+        </div>
+      </div>
+
+      <div class="dp-option" *ngIf="isValidConfig('closeOnBodyClickDelay')">
+        <span class="dp-option-header">
+          Closing Delay in ms (closeOnBodyClickDelay):
+        </span>
+        <div class="dp-option-playground">
+          <input id="closeOnBodyClickDelay"
+                 type="number"
+                 [(ngModel)]="config.closeOnBodyClickDelay"
+                 (change)="configChanged('closeOnBodyClickDelay', config.closeOnBodyClickDelay)">
         </div>
       </div>
 

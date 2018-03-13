@@ -473,7 +473,11 @@ export class DatePickerComponent implements OnChanges,
         this.onScroll();
       }),
       this.renderer.listen(document, 'click', () => {
-        this.onBodyClick();
+        if (this.componentConfig.closeOnBodyClickDelay) {
+          setTimeout(this.onBodyClick.bind(this), this.componentConfig.closeOnBodyClickDelay);
+        } else {
+          this.onBodyClick();
+        }
       })
     );
   }

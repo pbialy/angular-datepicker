@@ -6,6 +6,7 @@ import {ITimeSelectConfig, ITimeSelectConfigInternal} from '../time-select/time-
 export interface IConfig {
   closeOnSelect?: boolean;
   closeOnSelectDelay?: number;
+  closeOnBodyClickDelay?: number;
   openOnFocus?: boolean;
   openOnClick?: boolean;
   onOpenDelay?: number;
